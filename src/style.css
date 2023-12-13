@@ -1,0 +1,21 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    text-align: center;
+    background-image: url('https://64.media.tumblr.com/ce612f92b6cf9460d79ca0283fd2a71d/tumblr_nfgjw126kk1rcqe2qo1_540.gif');
+    background-size: cover;
+}
+#texto{
+ height: 100px; 
+
+ width: 50%;
+ overflow: hidden; 
+}
+hr{
+    background-color: black;
+}
+.titulo{
+    color:white;
+}
