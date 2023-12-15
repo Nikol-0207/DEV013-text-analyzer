@@ -15,15 +15,27 @@
     </header>
     <main>
       <hr/>
-        <input type="text" name="cuadro" id="texto" placeholder="Escribe un texto...">
+        <textarea name="cuadro" id="texto" cols="30" rows="10" placeholder="Escribe un texto"></textarea>
        <h2>
-       
+
         <button>Limpiar</button>
-         
+
         <button>Analizar Texto</button>
-        
+
        </h2>
+       <ul>
+        <li data-testid="word-count" ></li>
+        <li data-testid="character-count" > </li>
+        <li data-testid="character-no-spaces-count" >  </li>
+        <li data-testid="number-count" ></li>
+        <li data-testid="number-sum" ></li>
+        <li data-testid="word-lenght" ></li>
+        
+      </ul>
     </main>
+    <footer>
+      <p>Hecho por mi</p>
+    </footer>
   <script src="index.js" type="module"></script>
 </body>
 </html>

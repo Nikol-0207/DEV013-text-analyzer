@@ -4,8 +4,10 @@ body {
     align-items: center;
     margin: 10px;
     text-align: center;
-    background-image: url('https://64.media.tumblr.com/ce612f92b6cf9460d79ca0283fd2a71d/tumblr_nfgjw126kk1rcqe2qo1_540.gif');
-    background-size: cover;
+   /* background-image: url('https://64.media.tumblr.com/ce612f92b6cf9460d79ca0283fd2a71d/tumblr_nfgjw126kk1rcqe2qo1_540.gif');
+    background-repeat: no-repeat;
+    background-size: cover;*/
+   
 }
 #texto{
  height: 100px; 
@@ -17,5 +19,5 @@ hr{
     background-color: black;
 }
 .titulo{
-    color:white;
+    color:Blue;
 }
