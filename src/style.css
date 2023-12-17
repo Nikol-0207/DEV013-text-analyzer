@@ -2,12 +2,14 @@ body {
     font-family: 'Open Sans', sans-serif;
     justify-content: center;
     align-items: center;
-    margin: 10px;
+    margin: 1px;
     text-align: center;
-   /* background-image: url('https://64.media.tumblr.com/ce612f92b6cf9460d79ca0283fd2a71d/tumblr_nfgjw126kk1rcqe2qo1_540.gif');
+    background-size: cover;
+    background-image: url('https://png.pngtree.com/background/20221127/original/pngtree-aesthetic-simple-background-with-leaf-ornament-picture-image_1965436.jpg');
     background-repeat: no-repeat;
-    background-size: cover;*/
+    background-size: cover;
    
+    
 }
 #texto{
  height: 100px; 
@@ -19,5 +21,53 @@ hr{
     background-color: black;
 }
 .titulo{
-    color:Blue;
+    color: black; 
 }
+ main{
+    margin-bottom: 100px;
+}
+
+li{  
+ padding: 10px;
+ margin-bottom: 10px;
+ border-radius: 20px; 
+ background:transparent;
+ backdrop-filter: blur(10px);
+ text-align: left;
+ border:2px solid #FF1493;
+ color: black;
+}
+ul{
+    padding: 0;
+    list-style-type:none;
+    display: flex;
+    gap: 5px 5px;
+    text-align: center;
+
+}
+button{
+    color: black;
+    cursor: url('https://cdn-icons-png.flaticon.com/512/99/99188.png'), auto;
+   /*  cursor: pointer;
+     transition: transform 0.3s ease-in-out;*/
+}
+button:hover {
+    transform: scale(1.1);
+}
+
+
+
+.pie-de-pagina{
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    width: 100%;
+    height: 60px;
+    text-align:center;
+    color: white;
+}
+header{
+   background:transparent;
+   
+}
+

@@ -12,31 +12,39 @@
     <header>
       <hr>
        <h1 class="titulo">Analizador de Texto</h1>
-    </header>
+      <hr>
+      </header>
+   
     <main>
-      <hr/>
-        <textarea name="cuadro" id="texto" cols="30" rows="10" placeholder="Escribe un texto"></textarea>
+      
+        <textarea name="cuadro" id="textoarea" cols="30" rows="10" placeholder="Escribe un texto"></textarea>
        <h2>
-
-        <button id="reset-button">Limpiar</button>
-
-        <button>Analizar Texto</button>
-
-       </h2>
-       <ul>
-        <li data-testid="word-count" ></li>
-        <li data-testid="character-count" > </li>
-        <li data-testid="character-no-spaces-count" >  </li>
-        <li data-testid="number-count" ></li>
-        <li data-testid="number-sum" ></li>
-        <li data-testid="word-lenght" ></li>
         
+        <button id="reset-button" class="reset-button" onclick="reset()">
+        <span >Limpiar</span></button>
+         <br>
+       </h2>
+    <div class="contenedor">
+       <ul>
+        <li data-testid="word-count" >Palabras: <span>0</span></li>
+        <li data-testid="character-count" >Caracteres: <span>0</span></li>
+        <li data-testid="character-no-spaces-count" >Caracteres sin espacio: <span>0</span></li>
+        <li data-testid="number-count" >Números: <span>0</span></li>
+        <li data-testid="number-sum" >Suma de números: <span>0</span></li>
+        <li data-testid="word-lenght" >Promedio de longitud: <span>0</span></li>
+
       </ul>
+      </div>
     </main>
+    <div class="pie-de-pagina">
+      <br>
    <footer>
   <p>&copy; Hecho por mi</p>
 </footer> 
+     <br>
+     </div>
+     
   <script src="index.js" type="module"></script>
-
+  
 </body>
 </html>
