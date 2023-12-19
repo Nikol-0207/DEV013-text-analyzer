@@ -8,8 +8,7 @@ body {
     background-image: url('https://png.pngtree.com/background/20221127/original/pngtree-aesthetic-simple-background-with-leaf-ornament-picture-image_1965436.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-   
-    
+     
 }
 #texto{
  height: 100px; 
@@ -30,12 +29,13 @@ hr{
 li{  
  padding: 10px;
  margin-bottom: 10px;
- border-radius: 20px; 
+ border-radius: 40% 10%; 
  background:transparent;
  backdrop-filter: blur(10px);
+ border: 5px outset #FF1493 ;
  text-align: left;
- border:2px solid #FF1493;
  color: black;
+ 
 }
 ul{
     padding: 0;
@@ -43,19 +43,23 @@ ul{
     display: flex;
     gap: 5px 5px;
     text-align: center;
-
+    justify-content: center;
+    align-items: center;
 }
 button{
     color: black;
-    cursor: url('https://cdn-icons-png.flaticon.com/512/99/99188.png'), auto;
-   /*  cursor: pointer;
-     transition: transform 0.3s ease-in-out;*/
+    
+   /*  cursor: url('https://cdn-icons-png.flaticon.com/512/99/99188.png'), auto;*/
+    cursor: pointer;
+     transition: transform 0.3s ease-in-out;
+
 }
 button:hover {
     transform: scale(1.1);
+    box-shadow: 0px 0px 5px #73afdd,
+                0px 0px 30px  #73afdd,
+                0px 0px 90px #9163da;
 }
-
-
 
 .pie-de-pagina{
     position: fixed;
