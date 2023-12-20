@@ -52,7 +52,7 @@ button{
    /*  cursor: url('https://cdn-icons-png.flaticon.com/512/99/99188.png'), auto;*/
     cursor: pointer;
      transition: transform 0.3s ease-in-out;
-
+     
 }
 button:hover {
     transform: scale(1.1);
