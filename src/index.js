@@ -1,13 +1,16 @@
-//import analyzer from './analyzer.js';
-
+import analyzer from './analyzer.js';
+const textarea = document.getElementById('textoarea');
+    const words = document.getElementById('numbers');
 //TODO: escuchar eventos del DOM e invocar  los métodos del objeto `analyzer`
 function limpiar(){
- const limpia = document.getElementById('textoarea');
- limpia.value =''; 
+   let limpia = document.getElementById('textoarea');
+   limpia.value ='';   
+}
+function lecturaDdatos(){
+   analyzer.getWordCount();
+
 }
 
 
-
-
-
-
+   
+   

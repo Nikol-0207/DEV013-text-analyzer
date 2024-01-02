@@ -18,7 +18,7 @@
    
     <main>
       
-        <textarea name="cuadro" id="textoarea" cols="30" rows="10" placeholder="Escribe un texto"></textarea>
+        <textarea name="cuadro" id="textoarea" cols="60" rows="10" placeholder="Escribe un texto..."></textarea>
        <h2>
         
         <button id="reset-button" class="reset-button" onclick="limpiar()">
@@ -27,7 +27,7 @@
        </h2>
     <div class="contenedor">
        <ul>
-        <li data-testid="word-count" >Palabras: <span>0</span></li>
+        <li data-testid="word-count" >Palabras: <span id="numbers">0</span></li>
         <li data-testid="character-count" >Caracteres: <span>0</span></li>
         <li data-testid="character-no-spaces-count" >Caracteres sin espacio: <span>0</span></li>
         <li data-testid="number-count" >Números: <span>0</span></li>
