@@ -5,7 +5,7 @@ body {
     margin: 1px;
     text-align: center;
     background-size: cover;
-    background-image: url('https://www.solofondos.com/wp-content/uploads/2015/11/Fondos-para-p%C3%A1ginas-web.jpg');
+    background-image: url('https://img.lovepik.com/background/20211021/large/lovepik-3d-technology-background-image_500373647.jpg');
     background-repeat: no-repeat;
     background-size: cover;
      
@@ -33,7 +33,7 @@ li{
  border-radius: 40% 10%; 
  background:transparent;
  backdrop-filter: blur(10px);
- border: 5px outset #FF1493 ;
+ border: 5px outset #f0f1f1 ;
  text-align: left;
  color: white;
  width: 50%;
@@ -66,14 +66,14 @@ button:hover {
 }
 
 .pie-de-pagina{
-    position: fixed;
+    position:flex;
     bottom: 0;
     background-color: rgb(220, 233, 238);
     width: 100%;
     height: 60px;
     text-align:center;
     color: black;
-    border-color:rgb(32, 34, 34);
+    
 }
 header{
    background:transparent;
