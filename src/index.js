@@ -1,19 +1,36 @@
-import analyzer from './analyzer.js';
+import  analyzer from './analyzer.js';
 
-const textarea = document.getElementById('textoarea');   //contenido del textarea
-let valorDelSpan = document.getElementById('numbers').innerHTML;  //span de resultados
-let contPal = analyzer.getWordCount(textarea);
+let texto=document.getElementById('textoarea');
+texto.addEventListener('input',calcularMetricas);
+let limpiar=document.getElementById('reset-button');
+limpiar.addEventListener('click', limpiarTodo );
 
-console.log(textarea);
-//TODO: escuchar eventos del DOM e invocar  los métodos del objeto `analyzer`
-/*function limpiar(){ 
-}*/
- function contadorDePalabras(){
 
+
+function calcularMetricas(valor) {
+  console.log(valor);
+  /* var texto = document.getElementById("textoarea").value; */
+  let numPalabras = analyzer.getWordCount(valor.target.value);
+  let wordcountLi = document.querySelector('[data-testid="word-count"]');
+  console.log(numPalabras);
+   wordcountLi.innerHTML = 'Palabras: '+ numPalabras;
+ /*  var numCaracteres = analyzer.getCharacterCount(texto) ;
+
+
+  var numCaracteresSinEspacio = analyzer.getCharacterCountExcludingSpaces(texto); */
+
+
+
+ /*  document.getElementById("characters").textContent = numCaracteres;
+  document.getElementById("characters-no-space").textContent = numCaracteresSinEspacio; */
+
+}
+function limpiarTodo(){
+  texto.value= '';
+
+  const contadorPalabras = document.querySelector('[data-testid="word-count"]');
+  contadorPalabras.innerHTML = 'Palabras: 0';
  }
 
 
 
-
-   
-   
