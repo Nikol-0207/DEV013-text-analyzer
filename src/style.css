@@ -4,37 +4,41 @@ body {
     align-items: center;
     margin: 1px;
     text-align: center;
-    background-size: cover;
-    background-image: url('https://img.lovepik.com/background/20211021/large/lovepik-3d-technology-background-image_500373647.jpg');
+    background-size: contain;
+    background-color: #9d8abd;
+    /* background-image: url('https://www.solofondos.com/wp-content/uploads/2015/11/fondo-para-paginas-web-profesionales-3d-grandes.jpg'); */
     background-repeat: no-repeat;
     background-size: cover;
-     
+
+}
+#cabecera{
+  background-color: #26173e;
 }
 #texto{
- height: 100px; 
+ height: 100px;
 
  width: 50%;
- overflow: hidden; 
+ overflow: hidden;
 }
 hr{
     background-color: black;
 }
 .titulo{
-    color: white; 
-   
+    color: white;
+
 }
  main{
     margin-bottom: 100px;
 }
 
-li{  
+li{
  padding: 10px;
  margin-bottom: 10px;
- border-radius: 40% 10%; 
+ border-radius: 40% 10%;
  background:transparent;
  backdrop-filter: blur(10px);
  border: 5px outset #f0f1f1 ;
- text-align: left;
+ text-align:left;
  color: white;
  width: 50%;
 }
@@ -47,7 +51,7 @@ ul{
     text-align: center;
     justify-content: center;
     align-items: center;
-    
+
 }
 button{
     color: black;
@@ -55,8 +59,8 @@ button{
    /*  cursor: url('https://cdn-icons-png.flaticon.com/512/99/99188.png'), auto;*/
     cursor: pointer;
      transition: transform 0.3s ease-in-out;
-     
-     
+
+
 }
 button:hover {
     transform: scale(1.1);
@@ -73,10 +77,10 @@ button:hover {
     height: 60px;
     text-align:center;
     color: black;
-    
+
 }
 header{
    background:transparent;
-   
+
 }
 
