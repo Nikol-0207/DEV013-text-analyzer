@@ -29,7 +29,7 @@ const analyzer = {
     const arraytext = text.replace(/[.,/#!$%^&*;¿?¡!:{}=\-_`~()]/g,'').split(/\s+/);
     let suma = 0;
     const wordcount = analyzer.getWordCount(text);
-    console.log('aqui :'+ wordcount+'array:'+arraytext);
+    //console.log('aqui :'+ wordcount+'array:'+arraytext);
     for (let i = 0; i < wordcount.length; i++) {
       suma += arraytext[i].length;
     }
@@ -61,5 +61,5 @@ const analyzer = {
   },
 
 };
-
+//probando
 export default analyzer;
