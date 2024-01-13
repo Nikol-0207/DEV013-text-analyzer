@@ -39,6 +39,8 @@ function calcularMetricas(valor) {
     promediolong.innerHTML = 'Promedio de longitud: 0';
     const contadorcaractersin = document.querySelector('[data-testid="character-no-spaces-count"]');
     contadorcaractersin.innerHTML = 'Caracteres sin espacio: 0';
+    const num = document.querySelector('[data-testid="number-count"]');
+    num.innerHTML = 'Números: 0';
   }
 }
 function limpiarTodo(){
@@ -55,7 +57,7 @@ function limpiarTodo(){
   const sumaNum = document.querySelector('[data-testid="number-sum"]');
   sumaNum.innerHTML = 'Suma de números: 0';
   const promediolong = document.querySelector('[data-testid="word-lenght"]');
-  promediolong.innerHTML = 'Promedio de longitud: 0'; 
+  promediolong.innerHTML = 'Promedio de longitud: 0';
 }
 
 
