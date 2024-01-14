@@ -5,7 +5,6 @@ const analyzer = {
     const number = text.split(/\D+/);
     const longNum = number.filter(part => part.trim() !== '');
     const palabras = text.split(/[.,#!$%^&*;:{}=\-_`~()'"¿?¡¡\s]/g);
-    //const encuentraNum = /\d/;
     const palabrasFiltradas = palabras.filter(palabra => palabra.trim() !== '');
 
 
@@ -25,23 +24,24 @@ const analyzer = {
   },
   getAverageWordLength: (text) => {
     //TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`.
-
-    const arraytext = text.replace(/[.,/#!$%^&*;¿?¡!:{}=\-_`~()]/g,'').split(/\s+/);
-    let suma = 0;
-    const wordcount = analyzer.getWordCount(text);
-    for (let i = 0; i < wordcount.length; i++) {
-      suma += arraytext[i].length;
+    // Dividir el texto en palabras
+    const palabras = text.split(/\s+/);
+    // Calcular la longitud total de todas las palabras: 
+    let longitudTotal = 0;
+    for (let i = 0; i < palabras.length; i++) {
+      longitudTotal += palabras[i].length;
     }
-    const total = suma / wordcount.length;
-    const redondeo = parseFloat(total.toFixed(1));
-    return redondeo || 0;
+    // Calcular la longitud media
+    const longitudMedia = longitudTotal / palabras.length;
+    const redondeo = parseFloat(longitudMedia.toFixed(2));
+    return redondeo;
   },
   getNumberCount: (text) => {
     //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
-    const regex = /\b\d+(\.\d+)?\b/g;
     // Obtener todos los números del texto en un array
-    const numerosEncontrados = text.match(regex);
-    const resultado =numerosEncontrados.length;
+    const numerosEncontrados = text.match(/\b\d+(\.\d+)?\b/g);
+    const resultado = numerosEncontrados !== null ? numerosEncontrados.length : 0;
+
     return resultado;
   },
   getNumberSum: (text) => {

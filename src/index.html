@@ -11,40 +11,41 @@
 </head>
 
 <body>
-    <header id="cabecera" >
+    <header >
       <hr>
-       <h1 class="titulo">Analizador de Texto</h1>
+       <h1 >Analizador de Texto</h1>
       <hr>
       </header>
 
     <main>
 
-        <textarea name="cuadro" id="textoarea" cols="60" rows="10" placeholder="Escribe un texto..."></textarea>
+        <textarea name="user-input"  cols="60" rows="10" placeholder="Escribe un texto..." ></textarea>
        <h2>
-
         <button id="reset-button" class="reset-button" >
         Limpiar</button>
          <br>
        </h2>
     <div class="contenedor">
        <ul>
-        <li data-testid="word-count" >Palabras: 0</li>
-        <li data-testid="character-count" >Caracteres: 0</li>
-        <li data-testid="character-no-spaces-count" >Caracteres sin espacio: 0</li>
-        <li data-testid="number-count" >Números: 0</li>
-        <li data-testid="number-sum" >Suma de números: 0</li>
-        <li data-testid="word-lenght" >Promedio de longitud: 0</li>
+        <li data-testid="word-count" class="li">Palabras: 0</li>
+        <li data-testid="character-count" class="li">Caracteres: 0</li>
+        <li data-testid="character-no-spaces-count" class="li">Caracteres sin espacio: 0</li>
+        <li data-testid="number-count" class="li">Números: 0</li>
+        <li data-testid="number-sum" class="li">Suma de números: 0</li>
+        <li data-testid="word-lenght" class="li">Promedio de longitud: 0</li>
 
       </ul>
       </div>
     </main>
-    <div class="pie-de-pagina">
       <br>
    <footer>
-   &copy; Derechos Reservados Hecho por Wendy Nicol
+    <p>
+      &copy; Derechos Reservados Hecho por Wendy Nicol
+    </p>
+
 </footer>
      <br>
-     </div>
+
 
      <script type="module" src="index.js" ></script>
 

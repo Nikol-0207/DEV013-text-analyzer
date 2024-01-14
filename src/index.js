@@ -1,6 +1,6 @@
 import  analyzer from './analyzer.js';
 
-const texto=document.getElementById('textoarea');
+const texto=document.querySelector('[name="user-input"]');
 texto.addEventListener('input',calcularMetricas);
 const limpiar=document.getElementById('reset-button');
 limpiar.addEventListener('click', limpiarTodo );
