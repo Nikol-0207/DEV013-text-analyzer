@@ -1,10 +1,8 @@
-# Analizador de texto
-### Features
-- Support Standard Markdown / CommonMark and GFM(GitHub Flavored Markdown);
-- Full-featured: Real-time Preview, Image (cross-domain) upload, Preformatted text/Code blocks/Tables insert, Code fold, Search replace, Read only, Themes, Multi-languages, L18n, HTML entities, Code syntax highlighting...;
+# Analizador de text
+Este proyecto proporciona un conjunto de funciones en JavaScript para analizar texto y obtener diversas métricas. Las funciones incluyen contar palabras, contar caracteres, contar caracteres excluyendo espacios y puntuación, calcular la longitud media de palabras, contar números y obtener la suma de los números presentes en un texto.
 ## Índice
 
-* [1. Consideraciones generales](#1-consideraciones-generales)
+* [1. Funciones del Analizador](#1-consideraciones-generales)
 * [2. Preámbulo](#2-preámbulo)
 * [3. Resumen del proyecto](#3-resumen-del-proyecto)
 * [4. Funcionalidades](#4-funcionalidades)
