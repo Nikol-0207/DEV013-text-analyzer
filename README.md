@@ -1,12 +1,12 @@
 # Analizador de text
 Este proyecto proporciona un conjunto de funciones en JavaScript para analizar texto y obtener diversas métricas. Las funciones incluyen contar palabras, contar caracteres, contar caracteres excluyendo espacios y puntuación, calcular la longitud media de palabras, contar números y obtener la suma de los números presentes en un texto.
-## Índice
+## Contenido de Proyecto
 
-* [1. Funciones del Analizador](#1-consideraciones-generales)
-* [2. Preámbulo](#2-preámbulo)
-* [3. Resumen del proyecto](#3-resumen-del-proyecto)
+* [1. Funciones del Analizador](#1-funciones-del-analizador)
+* [2. Estructura del Proyecto](#2-preámbulo)
+* [3. Instrucciones de instalación](#3-resumen-del-proyecto)
 * [4. Funcionalidades](#4-funcionalidades)
-* [5. Boilerplate](#5-boilerplate)
+* [5. Cómo Ejecutar las Pruebas](#5-boilerplate)
 * [6. Criterios de aceptación mínimos del proyecto](#6-criterios-de-aceptación-mínimos-del-proyecto)
 * [7. Pruebas](#7-pruebas)
 * [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
