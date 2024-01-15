@@ -16,7 +16,7 @@ Este proyecto proporciona un conjunto de funciones en JavaScript para analizar t
 
 ***
 
-## 1. Consideraciones generales
+## 1. Funciones del Analizador
 
 * Este proyecto lo resolvemos de manera **individual**.
 * El rango de tiempo estimado para completar el proyecto es de 2 a 4 Sprints.
