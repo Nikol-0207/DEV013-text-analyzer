@@ -1,5 +1,5 @@
-# Analizador de text
-Este proyecto proporciona un conjunto de funciones en JavaScript para analizar texto y obtener diversas métricas. Las funciones incluyen contar palabras, contar caracteres, contar caracteres excluyendo espacios y puntuación, calcular la longitud media de palabras, contar números y obtener la suma de los números presentes en un texto.
+#Analizador de Texto
+Este proyecto con funciones de JavaScript es para analizar un texto y devolver datos númericos de funciones. Dichas funciones son contar palabras, contar caracteres, contar caracteres excluyendo signos de puntuación y espacios, la longitud media de las palabras, cuenta los números que hay y suma estos números presentes del texto escrito.
 ## Contenido de Proyecto
 
 * [1. Funciones del Analizador](#1-funciones-del-analizador)
@@ -9,10 +9,6 @@ Este proyecto proporciona un conjunto de funciones en JavaScript para analizar t
 * [5. Cómo Ejecutar las Pruebas](#5-boilerplate)
 * [6. Criterios de aceptación mínimos del proyecto](#6-criterios-de-aceptación-mínimos-del-proyecto)
 * [7. Pruebas](#7-pruebas)
-* [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
-* [9. Consideraciones para pedir tu Project Feedback](#9-consideraciones-para-pedir-tu-project-feedback)
-* [10. Objetivos de aprendizaje](#10-objetivos-de-aprendizaje)
-* [11. Funcionalidades opcionales](#11-funcionalidades-opcionales)
 
 ***
 
@@ -32,30 +28,11 @@ Este proyecto proporciona un conjunto de funciones en JavaScript para analizar t
 _Credito: Foto de [ethan](https://unsplash.com/fr/@andallthings?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
 _en [Unsplash](https://unsplash.com/es/fotos/72NpWZJOskU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
 
-Un analizador de texto es una aplicación para extraer información útil de un
-texto utilizando diversas técnicas, como el procesamiento del lenguaje
-natural (NLP), el aprendizaje automático (ML) y el análisis estadístico.
-Estas aplicaciones pueden proporcionar una variedad de métricas que brindan
-información básica sobre la longitud y la estructura del texto como por
-ejemplo, el conteo de palabras, el conteo de caracteres, el conteo de
-oraciones y el conteo de párrafos. Otras métricas incluyen el análisis
-de sentimientos, que utiliza técnicas de NLP para determinar el tono
-general positivo, negativo o neutral del texto, y el análisis de
-legibilidad, que utiliza algoritmos para evaluar la complejidad y la
-legibilidad del texto.
 
-En general, las aplicaciones de análisis de texto brindan información
-valiosa y métricas sobre los textos que pueden ayudar a las usuarias a
-tomar decisiones informadas y sacar conclusiones significativas.
-Mediante el uso de estas herramientas de análisis, las usuarias pueden
-obtener una comprensión más profunda de los textos.
 
-## 3. Resumen del proyecto
 
-En este proyecto crearás una aplicación web que servirá para que tu usuaria
-pueda analizar un texto en el navegador mostrando una serie de indicadores y
-métricas específicas sobre caracteres, letras, números, etc. Que hayan sido
-enviadas como _input_ por ella. Lo harás utilizando HTML, CSS y JavaScript.
+
+
 
 ## 4. Funcionalidades
 
