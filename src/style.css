@@ -1,4 +1,4 @@
-body {
+ body {
     font-family: cursive;
     justify-content: center;
     align-items: center;
@@ -6,10 +6,19 @@ body {
     text-align: center;
     background-size: contain;
     background-color: #9d8abd;
-    /* background-image: url('https://www.solofondos.com/wp-content/uploads/2015/11/fondo-para-paginas-web-profesionales-3d-grandes.jpg'); */
+    background-image:  url("./imagen/fond.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 
+}
+header{
+
+  color: white;
+  background:transparent;
+}
+h1{
+  /* width: 300px; */
+  border-bottom: solid 3px white;
 }
 
 #texto{
@@ -18,79 +27,75 @@ body {
  width: 50%;
  overflow: hidden;
 }
-hr{
-    background-color: black;
-}
-/* .titulo{
-    color: white;
-
-} */
- main{
-    margin-bottom: 100px;
-}
-
-.li{
- padding: 10px;
- margin-bottom: 10px;
- border-radius: 40% 10%;
- background:transparent;
- backdrop-filter: blur(10px);
- border: 5px outset #f0f1f1 ;
- text-align:left;
- color: white;
- width: 50%;
-
-}
-ul{
-    padding: 0;
-    list-style-type:none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px 5px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-
-}
-#reset-button{
-    color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   /*  cursor: url('https://cdn-icons-png.flaticon.com/512/99/99188.png'), auto;*/
-    cursor: pointer;
-     transition: transform 0.3s ease-in-out;
-
-
-}
-button:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 0px 5px #73afdd,
-                0px 0px 30px  #73afdd,
-                0px 0px 90px #9163da;
-}
-
-footer{
-    position:flex;
-    bottom: 0;
-    background-color: rgb(220, 233, 238);
-    width: 100%;
-    height: 60px;
-    text-align:center;
-    color: black;
-
-}
-header{
-   background:transparent;
-
-}
 textarea[name="user-input"] {
-  border-radius: 5px; /* Bordes redondeados */
+  border-radius: 5px;
 }
 textarea[name="user-input"]:focus {
   outline: none;
-  border-color: #0b0c0c; /* Cambia el color del borde al enfocar el textarea */
+  border-color: #0b0c0c;
   border-top-width: 2px;
   border-right-width: 2px;
   border-bottom-width: 2px;
   border-left-width: 2px;
 }
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; ;
+}
+
+.li{
+  flex: 0 0 calc(33.33% - 10px);
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 10px;
+  margin-right: 50px;
+  border-radius: 40% 10%;
+  background:transparent;
+  backdrop-filter: blur(10px);
+  border: 5px outset #f0f1f1 ;
+  text-align:left;
+  color: white;
+  width: 50%;
+}
+
+#reset-button {
+  color: rgb(220, 233, 238);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: rgb(36, 170, 223);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: large;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#reset-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2), 0px 2px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+footer{
+  margin-top: 17px;
+  background-color: rgb(36, 170, 223);
+  width: 100%;
+  text-align:center;
+  color: rgb(220, 233, 238);
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+
+
+
+
 

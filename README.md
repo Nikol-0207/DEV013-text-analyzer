@@ -5,7 +5,7 @@ Este proyecto proporciona un conjunto de funciones en JavaScript para analizar t
 * [1. Funciones del Analizador](#1-funciones-del-analizador)
 * [2. Estructura del Proyecto](#2-preámbulo)
 * [3. Instrucciones de instalación](#3-resumen-del-proyecto)
-* [4. Funcionalidades](#4-funcionalidades)
+* [4. Cómo Ejecutar las Pruebas](#4-funcionalidades)
 * [5. Cómo Ejecutar las Pruebas](#5-boilerplate)
 * [6. Criterios de aceptación mínimos del proyecto](#6-criterios-de-aceptación-mínimos-del-proyecto)
 * [7. Pruebas](#7-pruebas)
