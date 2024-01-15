@@ -20,7 +20,7 @@ function calcularMetricas(valor) {
   charactersinli.innerHTML = 'Caracteres sin espacio: '+ numCaractsin;
 
   const numlongmedia = analyzer.getAverageWordLength(valor.target.value);
-  const wordlenght = document.querySelector('[data-testid="word-lenght"]');
+  const wordlenght = document.querySelector('[data-testid="word-length-average"]');
   wordlenght.innerHTML = 'Promedio de longitud: '+ numlongmedia;
 
   const soloNumeros = analyzer.getNumberCount(valor.target.value);
@@ -35,7 +35,7 @@ function calcularMetricas(valor) {
   const reiniciadorContador = valor.target.value.length;
   if(reiniciadorContador === 0){
 
-    const promediolong = document.querySelector('[data-testid="word-lenght"]');
+    const promediolong = document.querySelector('[data-testid="word-length-average"]');
     promediolong.innerHTML = 'Promedio de longitud: 0';
     const contadorcaractersin = document.querySelector('[data-testid="character-no-spaces-count"]');
     contadorcaractersin.innerHTML = 'Caracteres sin espacio: 0';
@@ -56,7 +56,7 @@ function limpiarTodo(){
   num.innerHTML = 'Números: 0';
   const sumaNum = document.querySelector('[data-testid="number-sum"]');
   sumaNum.innerHTML = 'Suma de números: 0';
-  const promediolong = document.querySelector('[data-testid="word-lenght"]');
+  const promediolong = document.querySelector('[data-testid="word-length-average"]');
   promediolong.innerHTML = 'Promedio de longitud: 0';
 }
 

@@ -6,7 +6,7 @@
     text-align: center;
     background-size: contain;
     background-color: #9d8abd;
-    background-image:  url("./imagen/fond.jpg");
+    background-image:  url("https://img.freepik.com/vector-gratis/fondo-ondulado-degradado_79603-2091.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -29,14 +29,6 @@ h1{
 }
 textarea[name="user-input"] {
   border-radius: 5px;
-}
-textarea[name="user-input"]:focus {
-  outline: none;
-  border-color: #0b0c0c;
-  border-top-width: 2px;
-  border-right-width: 2px;
-  border-bottom-width: 2px;
-  border-left-width: 2px;
 }
 
 ul{
@@ -83,13 +75,12 @@ ul{
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2), 0px 2px 12px rgba(0, 0, 0, 0.3);
 }
 
-
 footer{
   margin-top: 17px;
-  background-color: rgb(36, 170, 223);
+  background-color: rgb(123, 128, 131);
   width: 100%;
   text-align:center;
-  color: rgb(220, 233, 238);
+  color: rgb(3, 4, 4);
   padding-top: 4px;
   padding-bottom: 4px;
 }
