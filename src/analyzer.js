@@ -26,7 +26,7 @@ const analyzer = {
     //TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`.
     // Dividir el texto en palabras
     const palabras = text.split(/\s+/);
-    // Calcular la longitud total de todas las palabras: 
+    // Calcular la longitud total de todas las palabras:
     let longitudTotal = 0;
     for (let i = 0; i < palabras.length; i++) {
       longitudTotal += palabras[i].length;
@@ -46,7 +46,6 @@ const analyzer = {
   },
   getNumberSum: (text) => {
     //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
-    ///\d+/g
     const soloNumeros = text.match(/\b\d+(\.\d+)?\b/g);
     let sum = 0;
     if (soloNumeros) {
