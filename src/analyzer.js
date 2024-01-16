@@ -39,7 +39,7 @@ const analyzer = {
     // Obtener todos los números del texto en un array
     const numerosEncontrados = text.match(/\b\d+(\.\d+)?\b/g);
 
-    let resultado = numerosEncontrados !== null ? numerosEncontrados.length : 0;
+    let resultado = 0;
     if (numerosEncontrados!== null){
       resultado = numerosEncontrados.length;
     }else{
