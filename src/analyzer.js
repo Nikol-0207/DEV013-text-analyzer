@@ -7,7 +7,6 @@ const analyzer = {
     const palabras = text.split(/[.,#!$%^&*;:{}=\-_`~()'"¿?¡¡\s]/g);
     const palabrasFiltradas = palabras.filter(palabra => palabra.trim() !== '');
 
-
     return parseInt(palabrasFiltradas.length-longNum.length);
   },
   getCharacterCount: (text) => {
@@ -19,7 +18,6 @@ const analyzer = {
   getCharacterCountExcludingSpaces: (text) => {
     //TODO: esta función debe retornar el recuento de caracteres excluyendo espacios y signos de puntuación que se encuentran en el parámetro `text` de tipo `string`.
     const textoLimpio = text.replace(/[.,#!$%^&*;:{}=\-_`~()'"¿?¡¡\s]/g, '');
-
     return textoLimpio.length;
   },
   getAverageWordLength: (text) => {
@@ -40,8 +38,13 @@ const analyzer = {
     //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
     // Obtener todos los números del texto en un array
     const numerosEncontrados = text.match(/\b\d+(\.\d+)?\b/g);
-    const resultado = numerosEncontrados !== null ? numerosEncontrados.length : 0;
 
+    let resultado = numerosEncontrados !== null ? numerosEncontrados.length : 0;
+    if (numerosEncontrados!== null){
+      resultado = numerosEncontrados.length;
+    }else{
+      resultado=0;
+    }
     return resultado;
   },
   getNumberSum: (text) => {

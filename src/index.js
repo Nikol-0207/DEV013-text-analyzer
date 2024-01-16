@@ -4,35 +4,36 @@ const texto=document.querySelector('[name="user-input"]');
 texto.addEventListener('input',calcularMetricas);
 const limpiar=document.getElementById('reset-button');
 limpiar.addEventListener('click', limpiarTodo );
-function calcularMetricas(valor) {
 
-  const numPalabras = analyzer.getWordCount(valor.target.value);
+function calcularMetricas() {
+
+  const numPalabras = analyzer.getWordCount(texto.value);
   const wordcountLi = document.querySelector('[data-testid="word-count"]');
   wordcountLi.innerHTML = 'Palabras: '+ numPalabras;
 
 
-  const numCaracteres = analyzer.getCharacterCount(valor.target.value) ;
+  const numCaracteres = analyzer.getCharacterCount(texto.value) ;
   const charactercountli = document.querySelector('[data-testid="character-count"]');
   charactercountli.innerHTML = 'Caracteres: '+ numCaracteres;
 
-  const numCaractsin = analyzer.getCharacterCountExcludingSpaces(valor.target.value);
+  const numCaractsin = analyzer.getCharacterCountExcludingSpaces(texto.value);
   const charactersinli = document.querySelector('[data-testid="character-no-spaces-count"]');
   charactersinli.innerHTML = 'Caracteres sin espacio: '+ numCaractsin;
 
-  const numlongmedia = analyzer.getAverageWordLength(valor.target.value);
+  const numlongmedia = analyzer.getAverageWordLength(texto.value);
   const wordlenght = document.querySelector('[data-testid="word-length-average"]');
   wordlenght.innerHTML = 'Promedio de longitud: '+ numlongmedia;
 
-  const soloNumeros = analyzer.getNumberCount(valor.target.value);
+  const soloNumeros = analyzer.getNumberCount(texto.value);
   const onlyNumber = document.querySelector('[data-testid="number-count"]');
   onlyNumber.innerHTML= 'Números: '+ soloNumeros;
 
 
-  const sumaNumeros = analyzer.getNumberSum(valor.target.value);
+  const sumaNumeros = analyzer.getNumberSum(texto.value);
   const addNumber = document.querySelector('[data-testid="number-sum"]');
   addNumber.innerHTML= 'Suma de números: '+ sumaNumeros;
 
-  const reiniciadorContador = valor.target.value.length;
+  const reiniciadorContador = texto.value.length;
   if(reiniciadorContador === 0){
 
     const promediolong = document.querySelector('[data-testid="word-length-average"]');

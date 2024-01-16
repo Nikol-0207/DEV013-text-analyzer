@@ -1,27 +1,91 @@
 #Analizador de Texto
 Este proyecto con funciones de JavaScript es para analizar un texto y devolver datos númericos de funciones. Dichas funciones son contar palabras, contar caracteres, contar caracteres excluyendo signos de puntuación y espacios, la longitud media de las palabras, cuenta los números que hay y suma estos números presentes del texto escrito.
-## Contenido de Proyecto
-
+**Contenido del Proyecto**
 * [1. Funciones del Analizador](#1-funciones-del-analizador)
-* [2. Estructura del Proyecto](#2-preámbulo)
-* [3. Instrucciones de instalación](#3-resumen-del-proyecto)
-* [4. Cómo Ejecutar las Pruebas](#4-funcionalidades)
-* [5. Cómo Ejecutar las Pruebas](#5-boilerplate)
-* [6. Criterios de aceptación mínimos del proyecto](#6-criterios-de-aceptación-mínimos-del-proyecto)
-* [7. Pruebas](#7-pruebas)
+* [2. Diseño del analizador de texto](#2-diseño-del-analizador-de-texto)
+* [3. Estructura del Proyecto](#2-estructura-del-proyecto)
+* [4. Instrucciones de instalación](#3-instrucciones-de-instalacion)
+* [5. Cómo Ejecutar las Pruebas](#4-cómo-ejecutar-las-pruebas)
 
-***
-
+-------
 ## 1. Funciones del Analizador
+-------
+**Contador de Palabras :**  Este método me retorna el número de palabras de un texto, esta palabra no debe estar mezclada con números, caracteres especiales por que sino no los considera como uno.
 
-* Este proyecto lo resolvemos de manera **individual**.
-* El rango de tiempo estimado para completar el proyecto es de 2 a 4 Sprints.
-* Enfócate en aprender y no solamente en "completar" el proyecto.
-* Te sugerimos que no intentes saberlo todo antes de empezar a codear.
-  No te preocupes demasiado ahora por lo que _todavía_ no entiendas.
-  Irás aprendiendo.
+     getWordCount: (text) => {
+    //TODO: esta función debe retornar el recuento de palabras que se encuentran en el parámetro `text` de tipo `string`.
+    const number = text.split(/\D+/);
+    const longNum = number.filter(part => part.trim() !== '');
+    const palabras = text.split(/[.,#!$%^&*;:{}=\-_`~()'"¿?¡¡\s]/g);
+    const palabrasFiltradas = palabras.filter(palabra => palabra.trim() !== '');
 
-## 2. Preámbulo
+    return parseInt(palabrasFiltradas.length-longNum.length);
+    },
+
+**Recuento de Caracteres:** es el total de caracteres de dicho texto, contando espacios y cualquier caracter especial.
+
+    getCharacterCount: (text) => {
+    //TODO: esta función debe retornar el recuento de caracteres que se encuentran en el parámetro `text` de tipo `string`.
+    return text.length;
+     },
+
+**Número de Caracteres sin espacios y signos de puntuación:** al igual que el anterior cuenta el número total de caracteres excluyendo espacios y signos de puntuación.
+
+    getCharacterCountExcludingSpaces: (text) => {
+    //TODO: esta función debe retornar el recuento de caracteres excluyendo espacios y signos de puntuación que se encuentran en el parámetro `text` de tipo `string`.
+    const textoLimpio = text.replace(/[.,#!$%^&*;:{}=\-_`~()'"¿?¡¡\s]/g, '');
+    return textoLimpio.length;
+    },
+
+**Calcular la longitud media de palabras:** retorna longitud media de palabras del texto, esto se logra sumando todas las longitudes de las palabras y dividirlo con el número total de palabras.
+
+    getAverageWordLength: (text) => {
+    //TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`.
+    // Dividir el texto en palabras
+    const palabras = text.split(/\s+/);
+    // Calcular la longitud total de todas las palabras:
+    let longitudTotal = 0;
+    for (let i = 0; i < palabras.length; i++) {
+      longitudTotal += palabras[i].length;
+    }
+    // Calcular la longitud media
+    const longitudMedia = longitudTotal / palabras.length;
+    const redondeo = parseFloat(longitudMedia.toFixed(2));
+    return redondeo;
+    },
+
+**Contador de números:** este método retornar cuantos números enteros o decimales se encuentren en el texto "Hola 12 1" resultado 2.
+
+    getNumberCount: (text) => {
+    //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
+    // Obtener todos los números del texto en un array
+    const numerosEncontrados = text.match(/\b\d+(\.\d+)?\b/g);
+
+    let resultado = numerosEncontrados !== null ? numerosEncontrados.length : 0;
+    if (numerosEncontrados!== null){
+      resultado = numerosEncontrados.length;
+    }else{
+      resultado=0;
+    }
+    return resultado;
+    },
+
+**Suma de números:** este método retorna la suma de números enteros o decimales que se encuentren en dicho texto. ejemplo: "Hola 12 1" resultado 13.
+
+    getNumberSum: (text) => {
+    //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
+    const soloNumeros = text.match(/\b\d+(\.\d+)?\b/g);
+    let sum = 0;
+    if (soloNumeros) {
+      for (const num of soloNumeros) {
+        sum =sum+ parseFloat(num);
+      }
+    }
+    return sum;
+    },
+
+## 2. Diseño del analizador de texto
+
 
 ![Una lupa sobre texto de libro](https://github.com/Laboratoria/curriculum/assets/92090/2b45f653-69a5-4282-a65c-d34125c36113)
 
@@ -147,6 +211,7 @@ El boilerplate que les damos contiene esta estructura:
   en la UI (interfaz de usuaria).
 * [`test/analyzer.spec.js`](./test/analyzer.spec.js): este archivo contiene las
 pruebas unitarias para los métodos del objeto `analyzer`.
+
 
 ***
 
