@@ -1,4 +1,5 @@
 #Analizador de Texto
+
 Este proyecto con funciones de JavaScript es para analizar un texto y devolver datos númericos de funciones. Dichas funciones son contar palabras, contar caracteres, contar caracteres excluyendo signos de puntuación y espacios, la longitud media de las palabras, cuenta los números que hay y suma estos números presentes del texto escrito.
 **Contenido del Proyecto**
 * [1. Funciones del Analizador](#1-funciones-del-analizador)
@@ -86,7 +87,7 @@ Este proyecto con funciones de JavaScript es para analizar un texto y devolver d
 
 ## 2. Diseño del analizador de texto
 
-
+[![dise-o-final.png](https://i.postimg.cc/0yS94YFg/dise-o-final.png)](https://postimg.cc/tsX0Zx9D)
 ![Una lupa sobre texto de libro](https://github.com/Laboratoria/curriculum/assets/92090/2b45f653-69a5-4282-a65c-d34125c36113)
 
 _Credito: Foto de [ethan](https://unsplash.com/fr/@andallthings?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
