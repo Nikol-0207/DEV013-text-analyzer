@@ -1,4 +1,4 @@
-#Analizador de Texto
+# Analizador de Texto
 
 Este proyecto con funciones de JavaScript es para analizar un texto y devolver datos númericos de funciones. Dichas funciones son contar palabras, contar caracteres, contar caracteres excluyendo signos de puntuación y espacios, la longitud media de las palabras, cuenta los números que hay y suma estos números presentes del texto escrito.
 **Contenido del Proyecto**
@@ -11,6 +11,10 @@ Este proyecto con funciones de JavaScript es para analizar un texto y devolver d
 -------
 ## 1. Funciones del Analizador
 -------
+**La aplicación permitira escribir en un cuadro de texto al usuario para calcular este texto**
+
+[![texto.png](https://i.postimg.cc/3x5CV4F4/texto.png)](https://postimg.cc/rKjrtpbM)
+
 **Contador de Palabras :**  Este método me retorna el número de palabras de un texto, esta palabra no debe estar mezclada con números, caracteres especiales por que sino no los considera como uno.
 
      getWordCount: (text) => {
@@ -87,11 +91,10 @@ Este proyecto con funciones de JavaScript es para analizar un texto y devolver d
 
 ## 2. Diseño del analizador de texto
 
-[![dise-o-final.png](https://i.postimg.cc/0yS94YFg/dise-o-final.png)](https://postimg.cc/tsX0Zx9D)
-![Una lupa sobre texto de libro](https://github.com/Laboratoria/curriculum/assets/92090/2b45f653-69a5-4282-a65c-d34125c36113)
 
-_Credito: Foto de [ethan](https://unsplash.com/fr/@andallthings?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
-_en [Unsplash](https://unsplash.com/es/fotos/72NpWZJOskU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)_
+_Prototipo final
+[![dise-o-final.png](https://i.postimg.cc/0yS94YFg/dise-o-final.png)](https://postimg.cc/tsX0Zx9D)
+
 
 
 
