@@ -4,9 +4,6 @@ Este proyecto con funciones de JavaScript es para analizar un texto y devolver d
 **Contenido del Proyecto**
 * [1. Funciones del Analizador](#1-funciones-del-analizador)
 * [2. Diseño del analizador de texto](#2-diseño-del-analizador-de-texto)
-* [3. Estructura del Proyecto](#2-estructura-del-proyecto)
-* [4. Instrucciones de instalación](#3-instrucciones-de-instalacion)
-* [5. Cómo Ejecutar las Pruebas](#4-cómo-ejecutar-las-pruebas)
 
 -------
 ## 1. Funciones del Analizador
@@ -97,28 +94,6 @@ Diseño inicial de como el lugar del titulo, cuadro de texo, boton y contadores
 *Prototipo final*
 [![dise-o-final.png](https://i.postimg.cc/0yS94YFg/dise-o-final.png)](https://postimg.cc/tsX0Zx9D)
 
-
-## 4. Funcionalidades
-
-El boilerplate que les damos contiene esta estructura:
-
-```text
-./
-├── .babelrc
-├── .editorconfig
-├── .eslintrc
-├── .gitignore
-├── README.md
-├── package.json
-├── src
-│   ├── analyzer.js
-│   ├── index.html
-│   ├── index.js
-│   └── style.css
-└── test
-    ├── .eslintrc
-    └── analyzer.spec.js
-```
 
 
 
