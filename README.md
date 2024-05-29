@@ -94,6 +94,7 @@ Diseño inicial de como el lugar del titulo, cuadro de texo, boton y contadores
 *Prototipo final*
 [![dise-o-final.png](https://i.postimg.cc/0yS94YFg/dise-o-final.png)](https://postimg.cc/tsX0Zx9D)
 
+Link GitHub Pages del proyecto: https://nikol-0207.github.io/DEV013-text-analyzer/src/index.html
 
 
 
